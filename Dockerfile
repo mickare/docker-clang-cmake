@@ -18,3 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     cmake \
     clang
+
+ENV \
+    CC="/usr/bin/clang" \
+    CXX="/usr/bin/clang++"
